@@ -1,18 +1,19 @@
 import random
 
-numbers = [random.randint(-10, 10) for _ in range(10)]
-print(numbers)
 
+def sort_list_imperative(arr: list[int]) -> list[int]:
+    size = len(arr)
 
-def sort_list_imperative(numbers: list[int]) -> list[int]:
-    n = len(numbers)
-
-    for i in range(n - 1):
-        for j in range(0, n - i - 1):
-            if numbers[j] < numbers[j + 1]:
-                numbers[j], numbers[j + 1] = numbers[j + 1], numbers[j]
+    for i in range(size - 1):
+        for j in range(0, size - i - 1):
+            if arr[j] < arr[j + 1]:
+                arr[j], arr[j + 1] = arr[j + 1], arr[j]
 
     return numbers
 
 
-print(sort_list_imperative(numbers))
+if __name__ == '__main__':
+
+    numbers = [random.randint(-10, 10) for _ in range(10)]
+    print(numbers)
+    print(sort_list_imperative(numbers))
