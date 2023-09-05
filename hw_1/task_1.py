@@ -4,7 +4,7 @@ numbers = [random.randint(-10, 10) for _ in range(10)]
 print(numbers)
 
 
-def sort_list_imperative(numbers: list[int]):
+def sort_list_imperative(numbers: list[int]) -> None:
     n = len(numbers)
     for i in range(n - 1):
         for j in range(0, n - i - 1):
