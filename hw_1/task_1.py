@@ -9,7 +9,7 @@ def sort_list_imperative(arr: list[int]) -> list[int]:
             if arr[j] < arr[j + 1]:
                 arr[j], arr[j + 1] = arr[j + 1], arr[j]
 
-    return numbers
+    return arr
 
 
 if __name__ == '__main__':
