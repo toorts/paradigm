@@ -29,4 +29,4 @@ if __name__ == '__main__':
     array2 = [random.randint(1, 10) for _ in range(10)]
 
     result = pearson_correlation(array1, array2)
-    print(f'Корреляция Пирсона между массивами: {result}')
+    print(f'Коэффициент корреляции Пирсона: {result}')
