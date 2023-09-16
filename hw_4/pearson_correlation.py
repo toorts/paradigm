@@ -23,9 +23,10 @@ def pearson_correlation(arr1: list[int], arr2: list[int]) -> float:
     return correlation
 
 
-# Пример использования
-array1 = [random.randint(1, 10) for _ in range(10)]
-array2 = [random.randint(1, 10) for _ in range(10)]
+if __name__ == '__main__':
 
-result = pearson_correlation(array1, array2)
-print("Корреляция Пирсона между массивами:", result)
+    array1 = [random.randint(1, 10) for _ in range(10)]
+    array2 = [random.randint(1, 10) for _ in range(10)]
+
+    result = pearson_correlation(array1, array2)
+    print(f'Корреляция Пирсона между массивами: {result}')
