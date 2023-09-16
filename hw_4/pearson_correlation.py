@@ -31,4 +31,4 @@ if __name__ == '__main__':
     print(f'Массив 2: {array2}')
 
     result = pearson_correlation(array1, array2)
-    print(f'Корреляция Пирсона между массивама: {result}')
+    print(f'Корреляция Пирсона между массивами: {result}')
