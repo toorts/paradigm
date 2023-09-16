@@ -27,6 +27,8 @@ if __name__ == '__main__':
 
     array1 = [random.randint(1, 10) for _ in range(10)]
     array2 = [random.randint(1, 10) for _ in range(10)]
+    print(f'Массив 1: {array1}')
+    print(f'Массив 2: {array2}')
 
     result = pearson_correlation(array1, array2)
-    print(f'Коэффициент корреляции Пирсона: {result}')
+    print(f'Корреляция Пирсона между массивама: {result}')
