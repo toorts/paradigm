@@ -25,8 +25,8 @@ def pearson_correlation(arr1: list[int], arr2: list[int]) -> float:
 
 if __name__ == '__main__':
 
-    array1 = [random.randint(1, 10) for _ in range(10)]
-    array2 = [random.randint(1, 10) for _ in range(10)]
+    array1 = [random.randint(0, 9) for _ in range(10)]
+    array2 = [random.randint(0, 9) for _ in range(10)]
     print(f'Массив 1: {array1}')
     print(f'Массив 2: {array2}')
 
